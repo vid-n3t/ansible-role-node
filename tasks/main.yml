@@ -1,0 +1,6 @@
+---
+
+- name: install node
+  homebrew: name={{item}} state=latest
+  with_items:
+    - node
