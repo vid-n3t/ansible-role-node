@@ -3,7 +3,6 @@
 - name: install node
   homebrew: name={{item}} state=latest
   with_items:
-    - node
     - nvm
 
 - name: create nvm directory
@@ -38,3 +37,10 @@
     create=true
   with_items:
     - node
+
+- name: install other node versions via nvm
+  shell: nvm install {{item}}
+  with_items: node_versions
+
+- name: set the default node
+  shell: nvm use {{node_versions[0]}}
