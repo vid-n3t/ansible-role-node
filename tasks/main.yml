@@ -6,7 +6,6 @@
     - nvm
 
 - name: create nvm directory
-  become: yes
   file:
     path: "{{item}}"
     state: directory
