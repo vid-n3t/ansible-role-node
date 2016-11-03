@@ -8,7 +8,7 @@ Ansible role to install NodeJS on OSX. This role is part of the Superlumic proje
 
 ## Dependencies
 
-* [roderik.superlumic-homebrew](https://github.com/superlumic/ansible-role-homebrew)
+* [vid.superlumic-homebrew](https://github.com/superlumic/ansible-role-homebrew)
 
 # Usage
 
